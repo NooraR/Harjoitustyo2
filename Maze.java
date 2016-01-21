@@ -11,6 +11,8 @@
 *
 */
 
+import java.util.Scanner;
+
 public class Maze {
 
    /*
@@ -331,6 +333,9 @@ public class Maze {
    * Main-metodi, joka pyörittää ohjelmaa
    */
    public static void main(String[] args) {
+      // Scannerin luonti
+      Scanner input = new Scanner(System.in);
+      
       // Alkutervehdyksen tulostus
       System.out.println("-----------\n| M A Z E |\n-----------");
       
@@ -371,7 +376,7 @@ public class Maze {
             System.out.println("m/move, s/solve, q/quit?");
 
             // Vastaanottaa käyttäjän syötteen
-            answer = In.readChar();
+            answer = (input.nextLine()).char.At(0);
                         
             /*
             * Vertailee käyttäjän syötettä ja tekee määritellyn toimenpiteen.
